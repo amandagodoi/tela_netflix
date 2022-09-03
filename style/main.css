@@ -1,0 +1,214 @@
+:root{
+    --vermelho: #e50914;
+    --preta: #141414;
+}
+/*declaração de variáveis*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*resetando formatação automática da página*/
+
+body{
+    background-color: var(--preta);
+    font-family:'arial', Times, serif;
+    color: white;
+}
+/*formatação do corpo da página*/
+header .container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+/*formatação do menu da página*/
+
+header .logo{
+    margin-left: 6px;
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size:40px;
+}
+/*formatação do logo da página*/
+
+header nav a{
+text-decoration:none;
+color: #AAA;
+margin-right:10px;
+}
+/* formatação dos links do menu*/
+
+header nav a:hover{
+    color:#fff;
+}
+/* toda vez que passar o mouse em cima do link ele irá mudar de cor por conta dessa função*/
+
+.filme-principal{
+    font-size:16px;
+    background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('./img/friends4.jpg');
+    /*vai criar uma camada gradiente da mesma cor em cima da foto.*/
+   
+    height:400px;
+    /*definindo o tamanho da div*/
+    background-size:cover;
+    /* o background vai cobrir toda a caixa*/
+
+    display: flex;
+    /*movendo os botões de lugar*/
+    flex-direction: column;
+    /*deixa o botão embaixo do outro*/
+    align-items: flex-start;
+    /*deixa os botãos na esquerda*/
+    
+}
+
+.filme-principal .descricao{
+    margin-bottom: 25px;
+    margin-top: 35px;
+
+}
+
+.container .descricao{
+    justify-content: center;
+    width: 100%;
+}
+
+
+.filme-principal .titulo{
+    margin-top: 5%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    /*afasta os botões*/
+    
+    margin-right: 15px;
+    font-size: 12px;
+    
+
+    cursor: pointer;
+    /*icon de mãozinha*/
+    transition:  1s ease all;
+    /*transição de cor quando passa o mouse*/
+
+    width: 200px;
+}
+
+.botao:hover{
+    background-color: white;
+    /*quando coloca passa o mouse em cima do botão fica branco o fundo*/
+    color:black;
+    /*quando coloca passa o mouse em cima do botão fica preto o texto*/
+
+}
+
+.botao i{
+    margin-right: 8px;
+
+}
+/*ajustando espaçamento dos ícones dentro do botão*/
+
+#botaoInfo{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    /*afasta os botões*/
+    
+    margin-right: 15px;
+    font-size: 12px;
+    
+
+    cursor: pointer;
+    /*icon de mãozinha*/
+    transition:  1s ease all;
+    /*transição de cor quando passa o mouse*/
+
+    width: 200px;
+    margin-top: 2px;
+}
+
+#botaoInfo:hover{
+    background-color: white;
+    /*quando coloca passa o mouse em cima do botão fica branco o fundo*/
+    color:black;
+    /*quando coloca passa o mouse em cima do botão fica preto o texto*/
+
+}
+
+#botaoInfo i{
+    margin-right: 8px;
+
+}
+/*ajustando espaçamento dos ícones dentro do botão*/
+
+
+.container{
+    margin-left: 20px;
+    margin-right: 20px;
+    
+
+}
+
+.filme-principal .container{
+    /*vai alterar somente a div container do filme principal*/
+    width: 50%;
+    /*limita o quanto de tela o texto vai ocupar*/
+    text-align:justify;
+    /*justifica o texto*/
+    /*background-color: rgb(102, 194, 143);*/
+    margin-top: 70px;
+    /*70px de margem no topo dessa div*/
+    padding: 20px 10px 20px 20px;
+}
+
+#info {
+font-size: 15px;
+background-color:rgba(117, 103, 103, 0.74);
+width: 50%;
+margin-top: 70px;
+padding: 20px 30px 20px 20px;
+margin-right: 10px;
+text-align: justify;
+}
+   
+
+.filme-principal{
+    flex-direction: inherit;
+    /*coloca as div container lado a lado*/
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.box-filme{
+    height: 100%x;
+    width: 100%;
+    /*as imagens do carrossel vão aparecer com seu tamanho natural*/
+    display: block;
+}
+
+.carrossel-filmes{
+    margin-top: 15px;
+    padding-left: 10px;
+}
+
+.carrossel-filmes:nth-child(4){
+margin-bottom: 25px;
+}
+
+.titulo-carrossel{
+    font-size: 18px;
+    padding-bottom: 5px;
+   
+}
+
+.owl-dots{
+    display: none;
+}

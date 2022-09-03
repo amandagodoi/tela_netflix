@@ -1,0 +1,46 @@
+@media screen and (max-width: 923px){
+   
+    header .container{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 8px;
+    }
+
+    .botao{
+        margin-bottom: 5px;
+        width: 200px;
+    }
+    
+    #botaoInfo{
+        display: none;
+    }
+
+    .filme-principal #info{
+        display: none;
+    }
+
+    .filme-principal .descricao{
+        margin-top: 2px;
+        width: 80%;
+    
+    }
+    
+    .container .descricao{
+        justify-content: center;
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    
+    .filme-principal .container{
+        margin-block: auto;
+        width: 100%;
+        flex-flow: column;
+    }
+
+}
+
+
+
+
+/*a descrição ocupa 50% da tela quando se tem 1000px*/
